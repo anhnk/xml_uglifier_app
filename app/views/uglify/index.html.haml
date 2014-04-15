@@ -1,0 +1,11 @@
+%h1 Uglify your XML
+%p
+  Use
+  %a{href: "http://www.freeformatter.com/xml-formatter.html", target: "_blank"} this tool
+  to beautify and edit your xml content.
+%p then...
+%p Paste your beautiful xml content below:
+= form_for :uglifier do |f|
+  = f.text_area :content, size: '80x40'
+  %br
+  = f.submit 'Uglify!'
